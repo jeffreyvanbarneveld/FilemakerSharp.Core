@@ -71,7 +71,7 @@ namespace FilemakerSharp.Core.Interfaces
             /// </summary>
             /// <param name="layoutname">Layout name</param>
             /// <param name="recordID">Record ID</param>
-            EditRecordCommand EditRecordCommand(string layoutname, int recordID);
+            IEditRecordCommand EditRecordCommand(string layoutname, int recordID);
 
             /// <summary>
             /// Get layout names

@@ -211,7 +211,7 @@ namespace FilemakerSharp.Core
         /// </summary>
         /// <param name="layoutname">Layout name</param>
         /// <param name="recordID">Record ID</param>
-        public EditRecordCommand EditRecordCommand(string layoutname, int recordID)
+        public IEditRecordCommand EditRecordCommand(string layoutname, int recordID)
         {
             EditRecordCommand command = new EditRecordCommand(this, layoutname, recordID);
 
