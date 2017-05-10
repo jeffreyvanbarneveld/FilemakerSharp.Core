@@ -4,6 +4,6 @@ sudo: required
 mono: none
 dotnet: 1.0.1
 script:
-  - FilemakerSharp.Core/build.sh --quiet verify
+  - sh FilemakerSharp.Core/build.sh verify
 before_install:
   - chmod +x FilemakerSharp.Core/build.sh
