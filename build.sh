@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 cd $TRAVIS_BUILD_DIR/FilemakerSharp.Core
-dotnet restore && dotnet build
+dotnet restore && dotnet build --configuration Release
