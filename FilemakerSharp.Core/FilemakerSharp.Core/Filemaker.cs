@@ -27,7 +27,7 @@ namespace FilemakerSharp.Core
         private string m_siteurl;
         private string m_baseurl;
 
-        public static int TimeOut
+        public int TimeOut
         {
             get
             {
@@ -114,7 +114,7 @@ namespace FilemakerSharp.Core
             m_selectedDatabase = databaseName;
 
             if (m_validateDatabase)
-                m_layoutNames = getLayouts().Result;
+                m_layoutNames = GetLayouts().Result;
         }
 
         /// <summary>
@@ -222,7 +222,7 @@ namespace FilemakerSharp.Core
         /// Get layout names
         /// </summary>
         /// <returns>The layout names</returns>
-        private async Task<List<string>> getLayouts()
+        public async Task<List<string>> GetLayouts()
         {
             AvailableLayoutsCommand command = new AvailableLayoutsCommand(this);
 
